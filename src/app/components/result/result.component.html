@@ -1,0 +1,9 @@
+<div class="loan-approval">
+    <h3>Loan Assessment</h3>
+    <p>Pre-assessment value: {{ preAssessment }}</p>
+    <p *ngIf="isLoanApproved; else notApproved" class="loan-approved">Loan is Approved</p>
+    <ng-template #notApproved>
+      <p class="loan-not-approved">Loan is not Approved</p>
+    </ng-template>
+  </div>
+  

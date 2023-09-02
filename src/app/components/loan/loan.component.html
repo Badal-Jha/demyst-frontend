@@ -1,0 +1,21 @@
+<div id="application-form">
+    <h1>Business Loan Application</h1>
+    <label for="businessName">Business Name:</label>
+    <input type="text" id="businessName" required [(ngModel)]="businessName" aria-required="true"/><br>
+
+    <label for="yearEstablished">Year Established:</label>
+    <input type="number" id="yearEstablished" required [(ngModel)]="yearEstablished" /><br>
+
+    <label for="loanAmount">Loan Amount:</label>
+    <input type="number" id="loanAmount" required [(ngModel)]="loanAmount" /><br>
+
+    <label for="accountingProvider">Accounting Provider:</label>
+    <select id="accountingProvider" required [(ngModel)]="selectedProvider">
+        <option value="Xero">Xero</option>
+        <option value="MYOB">MYOB</option>
+        <!-- Add more accounting providers here -->
+    </select><br>
+
+    <button id="fetchBalanceSheet" (click)="getBalanceSheet()">Request Balance Sheet</button>
+
+</div>

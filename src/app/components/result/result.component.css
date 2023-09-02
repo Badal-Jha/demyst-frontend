@@ -1,0 +1,33 @@
+/* loan-approval.component.css */
+
+.loan-approval {
+    background-color: #cec1c1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width:50%;
+    margin: 0 auto;
+
+  }
+  
+  .loan-approval h3 {
+    color: #333;
+  }
+  
+  .loan-approval p {
+    margin: 10px 0;
+    font-size: 25px;
+  }
+  
+ .loan-approved {
+    color: #2ecc71; /* Green color for approval */
+    font-weight: bold;
+  }
+  
+.loan-not-approved {
+    color: #e74c3c; /* Red color for rejection */
+    font-weight: bold;
+  }
+  

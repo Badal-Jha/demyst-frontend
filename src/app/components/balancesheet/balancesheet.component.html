@@ -1,0 +1,22 @@
+<div id="balance-sheet">
+    <h2>Balance Sheet</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Profit/Loss</th>
+                <th>Assets Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sheet of balanceSheet">
+                <td>{{ sheet.year }}</td>
+                <td>{{ sheet.month }}</td>
+                <td>{{ sheet.profitOrLoss }}</td>
+                <td>{{ sheet.assetsValue }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="apply-loan" (click)="applyLoan()">Apply Loan</button>
+</div>
