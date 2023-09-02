@@ -16,8 +16,8 @@ export class LoanComponent {
   
   getBalanceSheet():any{
      
-     if(this.businessName==='' || this.yearEstablished<=1000 || this.loanAmount==0 || this.selectedProvider==''){
-            alert("provide all the fields");
+     if(this.businessName==='' || this.yearEstablished<0|| this.loanAmount==0 || this.selectedProvider==''){
+            alert("provide valid data");
             return;
      }
 
